@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>WINGO QUIZ</title>
+	<link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+		<div class="thebiggestwrap">
+		<div class="titleWingo"></div>
+		<div class="america"></div>
+		<div class="passSeccsess">Your results are ready!</div>
+	<div class="rezult">
+		<div class="up">
+			<div class="up-rezult"></div>
+		</div>
+		<div class="mid">
+			<span class="mid-text">YOUR ANALYSIS</span>
+		</div>
+		<div class="down">
+
+		</div>
+	</div>
+	<div class="gradwrap">
+		<div id='container'>
+			<div class="passSeccsess">Your results are ready!</div>
+			<div class="resAreR" id='progress' style='width: 0%'></div>
+		</div>
+		<div class="back">
+		<div class="firstPage">
+			<div class="doctorImage">
+				<div class="doctorImage__background"></div>
+			</div>
+			<div class="doctorInfo">
+				<div class="skobki"></div>
+				<div class="doctorSpech">Hey, I’m Dr. John Peralli , I’ll run <span class="ashka">a</span> quick analysis to see if WINGO face moisturizer is a good fit for you. 
+				</div>
+				<button class="start">START THE QUIZ</button>
+			</div>
+
+	</div>
+			<div class="quiz" id="quiz">
+		<!-- <div id='container'>
+			<div id='progress' style='width: 0%'></div>
+		</div> -->
+		<div class="wrapper">
+			<h3 class="container-user-info-title">Our questions + your answers = personal recommendations from a dermatologist</h3> 
+			<div class='container-user-info'>
+				<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+						<p class="pska">Leave your contacts to get the resualt</p>
+						<div class="enter-email">
+							<input class="emailUser" type="text" name="email" placeholder=" Enter your email"/>
+						</div>
+						<div class="enter-phone">
+							<input class="phoneUser" name="custom_mobile_phone" type="text" value="" placeholder=" Enter your phone number"/>
+						</div>
+						<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+						<input type="hidden" name="campaign_token" value="LjCU4" />
+						<!-- Thank you page (optional) -->
+						<input type="hidden" name="thankyou_url" value="https://www.google.com/"/>
+						<!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+						<input type="hidden" name="start_day" value="0" />
+						<input type="submit" value="Subscribe"/>
+					</form>
+				</div>
+		</div> 
+		<div class="quiz-header" id="header">
+			<!-- Заголовок вопроса -->
+			<h2 class="title">Загружаем вопрос...</h2>
+			<!-- Результаты викторины -->
+		</div>
+
+			<ul class="quiz-list" id="list">
+
+			</ul>
+				<button class="quiz-prev prev " id="prev"  data-value='10'>BACK</button>
+				<button class="quiz-submit submit btn" id="submit" data-value='10'>CONTINUE</button>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script type="module" src="./main.js"></script>
+	<!-- <script type="module" src="./result.js"></script> -->
+	
+
+</body>
+</html>
